@@ -1,0 +1,13 @@
+function setup() {
+  createCanvas(400, 400);
+  colorMode(HSB, 450);
+}
+
+function draw() {
+  background(400);
+
+  for (var x = 10; x < width-10; x = x + 10) {
+    stroke(x,400,400);
+    line(x, height/2, mouseX, mouseY);
+  }
+}
